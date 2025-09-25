@@ -2,39 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* YatraRaksha & Garuda Dashboard Design System
+Professional safety monitoring interface with authority-focused colors
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors - Professional dashboard theme */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
 
+    /* Card system */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Authority blue - primary brand */
+    --primary: 217 91% 24%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 217 91% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Professional gray-blue */
+    --secondary: 215 16% 92%;
+    --secondary-foreground: 215 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Safety green - for safe zones and positive status */
+    --safe: 142 76% 36%;
+    --safe-foreground: 0 0% 100%;
+    --safe-light: 142 76% 94%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Alert system colors */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --warning-light: 38 92% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 100%;
+    --danger-light: 0 84% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* High-risk zone - deep red */
+    --critical: 0 65% 45%;
+    --critical-foreground: 0 0% 100%;
+
+    /* Muted colors */
+    --muted: 215 16% 95%;
+    --muted-foreground: 215 13% 50%;
+
+    /* Accent - for highlights and CTAs */
+    --accent: 217 91% 24%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 217 91% 24%;
 
     --radius: 0.5rem;
 
