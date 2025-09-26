@@ -14,10 +14,11 @@ import {
 } from 'lucide-react';
 
 const mockActiveCases = [
-  { id: 'SOS-001', type: 'Emergency SOS', tourist: 'Raj Patel', location: 'Manali Hills, HP', time: '2 min ago', priority: 'critical' },
-  { id: 'SOS-002', type: 'Medical Emergency', tourist: 'Anna Johnson', location: 'Trekking Route, UK', time: '5 min ago', priority: 'critical' },
-  { id: 'GEO-003', type: 'Restricted Area Entry', tourist: 'Mike Brown', location: 'Border Zone, J&K', time: '8 min ago', priority: 'high' },
-  { id: 'OFF-004', type: 'Device Offline', tourist: 'Lisa Chen', location: 'Last: Delhi Airport', time: '15 min ago', priority: 'medium' },
+  { id: 'SOS-001', type: 'Mobile App SOS', tourist: 'ROHIT', location: 'Hyderabad, TS (Geofenced)', time: 'Just now', priority: 'critical' },
+  { id: 'SOS-002', type: 'Emergency SOS', tourist: 'Raj Patel', location: 'Manali Hills, HP', time: '2 min ago', priority: 'critical' },
+  { id: 'SOS-003', type: 'Medical Emergency', tourist: 'Anna Johnson', location: 'Trekking Route, UK', time: '5 min ago', priority: 'critical' },
+  { id: 'GEO-004', type: 'Restricted Area Entry', tourist: 'Mike Brown', location: 'Border Zone, J&K', time: '8 min ago', priority: 'high' },
+  { id: 'OFF-005', type: 'Device Offline', tourist: 'Lisa Chen', location: 'Last: Delhi Airport', time: '15 min ago', priority: 'medium' },
 ];
 
 const mockHotspots = [

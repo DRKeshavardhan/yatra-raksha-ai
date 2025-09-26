@@ -28,6 +28,21 @@ import {
 const mockSOSAlerts = [
   {
     id: 'SOS-001',
+    touristName: 'ROHIT',
+    touristId: 'YR-T001',
+    phoneNumber: '+91 98848 50367',
+    location: 'Hyderabad, Telangana (Geofenced Zone)',
+    coordinates: '17.3616° N, 78.4747° E',
+    alertTime: '2024-01-15 14:30:25',
+    responseTime: null,
+    status: 'active',
+    priority: 'critical',
+    assignedUnit: 'Unit-TS-01',
+    alertType: 'Mobile App SOS',
+    lastKnownStatus: 'Stationary - Geofenced'
+  },
+  {
+    id: 'SOS-002',
     touristName: 'Raj Patel',
     touristId: 'YR-T003',
     phoneNumber: '+91-9876543210',
@@ -42,7 +57,7 @@ const mockSOSAlerts = [
     lastKnownStatus: 'Moving'
   },
   {
-    id: 'SOS-002',
+    id: 'SOS-003',
     touristName: 'Anna Johnson',
     touristId: 'YR-T008',
     phoneNumber: '+1-555-0123',
@@ -57,7 +72,7 @@ const mockSOSAlerts = [
     lastKnownStatus: 'Stationary'
   },
   {
-    id: 'SOS-003',
+    id: 'SOS-004',
     touristName: 'Mike Brown',
     touristId: 'YR-T005',
     phoneNumber: '+44-7700-900123',
@@ -72,7 +87,7 @@ const mockSOSAlerts = [
     lastKnownStatus: 'Safe'
   },
   {
-    id: 'SOS-004',
+    id: 'SOS-005',
     touristName: 'Lisa Chen',
     touristId: 'YR-T006',
     phoneNumber: '+86-138-0013-8000',
