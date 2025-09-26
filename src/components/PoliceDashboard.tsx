@@ -33,7 +33,6 @@ const PoliceDashboard = ({ onLogout, username }: PoliceDashboardProps) => {
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full bg-background">
-        <PoliceSidebar activeTab={activeTab} onTabChange={setActiveTab} />
         <main className="flex-1 flex flex-col">
           <DashboardHeader 
             title="Garuda Police Dashboard"
@@ -42,8 +41,11 @@ const PoliceDashboard = ({ onLogout, username }: PoliceDashboardProps) => {
             username={username}
             onLogout={onLogout}
           />
-          <div className="flex-1 p-6">
-            {renderContent()}
+          <div className="flex-1 flex">
+            <div className="flex-1 p-6">
+              {renderContent()}
+            </div>
+            <PoliceSidebar activeTab={activeTab} onTabChange={setActiveTab} />
           </div>
         </main>
       </div>

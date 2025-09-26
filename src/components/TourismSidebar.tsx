@@ -36,27 +36,28 @@ export function TourismSidebar({ activeTab, onTabChange }: TourismSidebarProps) 
   const { state } = useSidebar();
 
   return (
-    <Sidebar className="w-64" collapsible="icon">
-      <SidebarContent>
+    <Sidebar className="w-72 border-l border-border" collapsible="icon" side="right">
+      <SidebarContent className="bg-secondary/30">
         <SidebarGroup>
-          <SidebarGroupLabel className="text-primary font-semibold">
-            Tourism Board Portal
+          <SidebarGroupLabel className="text-primary font-semibold text-center py-4 border-b border-border">
+            Navigation Panel
           </SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
+          <SidebarGroupContent className="mt-4">
+            <SidebarMenu className="space-y-2">
               {menuItems.map((item) => (
                 <SidebarMenuItem key={item.id}>
                   <SidebarMenuButton 
                     onClick={() => onTabChange(item.id)}
                     className={`
+                      w-full justify-start rounded-lg transition-all duration-200
                       ${activeTab === item.id 
-                        ? 'bg-primary text-primary-foreground font-medium' 
-                        : 'hover:bg-muted/50'
+                        ? 'bg-primary text-primary-foreground font-medium shadow-sm' 
+                        : 'hover:bg-muted/50 hover:shadow-sm'
                       }
                     `}
                   >
-                    <item.icon className="h-4 w-4" />
-                    <span>{item.title}</span>
+                    <item.icon className="h-5 w-5" />
+                    <span className="ml-3">{item.title}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
