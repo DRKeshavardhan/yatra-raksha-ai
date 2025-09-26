@@ -32,7 +32,7 @@ const PoliceDashboard = ({ onLogout, username }: PoliceDashboardProps) => {
 
   return (
     <SidebarProvider>
-      <div className="min-h-screen flex w-full bg-gradient-to-br from-background via-muted/20 to-primary/5">
+      <div className="min-h-screen flex w-full bg-background">
         <PoliceSidebar activeTab={activeTab} onTabChange={setActiveTab} />
         <main className="flex-1 flex flex-col">
           <DashboardHeader 

@@ -38,7 +38,7 @@ const TourismDashboard = ({ onLogout, username }: TourismDashboardProps) => {
 
   return (
     <SidebarProvider>
-      <div className="min-h-screen flex w-full bg-gradient-to-br from-background via-muted/30 to-safe-light/20">
+      <div className="min-h-screen flex w-full bg-background">
         <TourismSidebar activeTab={activeTab} onTabChange={setActiveTab} />
         <main className="flex-1 flex flex-col">
           <DashboardHeader 

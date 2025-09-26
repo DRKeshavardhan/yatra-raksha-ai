@@ -32,28 +32,27 @@ export function PoliceSidebar({ activeTab, onTabChange }: PoliceSidebarProps) {
   const { state } = useSidebar();
 
   return (
-    <Sidebar className="w-72 border-l border-border" collapsible="icon" side="right">
-      <SidebarContent className="bg-secondary/30">
+    <Sidebar className="w-64" collapsible="icon">
+      <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel className="text-critical font-semibold text-center py-4 border-b border-border">
-            Control Panel
+          <SidebarGroupLabel className="text-critical font-semibold">
+            Garuda Police Portal
           </SidebarGroupLabel>
-          <SidebarGroupContent className="mt-4">
-            <SidebarMenu className="space-y-2">
+          <SidebarGroupContent>
+            <SidebarMenu>
               {menuItems.map((item) => (
                 <SidebarMenuItem key={item.id}>
                   <SidebarMenuButton 
                     onClick={() => onTabChange(item.id)}
                     className={`
-                      w-full justify-start rounded-lg transition-all duration-200
                       ${activeTab === item.id 
-                        ? 'bg-critical text-critical-foreground font-medium shadow-sm' 
-                        : 'hover:bg-muted/50 hover:shadow-sm'
+                        ? 'bg-critical text-critical-foreground font-medium' 
+                        : 'hover:bg-muted/50'
                       }
                     `}
                   >
-                    <item.icon className="h-5 w-5" />
-                    <span className="ml-3">{item.title}</span>
+                    <item.icon className="h-4 w-4" />
+                    <span>{item.title}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
